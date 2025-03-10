@@ -31,7 +31,7 @@ if submit_button:
         st.error("Kolom Kendala harus di isi")
     else:
         st.success("Pelaporan anda berhasil di input dengan status Tiket Open")
-        time.sleep(5)
+        time.sleep(2)
         new_tiket = f"DV{random.randint(10000,99999)}"
         new_id = csv["id"].max() + 1 if not csv.empty else 1
         new_data = pd.DataFrame(
@@ -51,6 +51,6 @@ save_button = st.button("Save Changes")
 
 if save_button:
       st.success("Perubahan pada table telah berhasil")
-      time.sleep(5)
+      time.sleep(2)
       edited_df.to_csv("data.csv", index=False)
       st.rerun()
