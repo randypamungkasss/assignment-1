@@ -43,7 +43,6 @@ if submit_button:
         print(f'{new_id}')
         st.rerun()
 
-# csv.columns = [col.upper() for col in csv.columns]
 
 st.write("### Data Ticketing")
 edited_df = st.data_editor(csv, hide_index=True)
