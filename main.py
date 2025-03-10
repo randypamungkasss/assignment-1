@@ -30,7 +30,7 @@ if submit_button:
     elif not kendala:
         st.error("Kolom Kendala harus di isi")
     else:
-        st.toast("Pelaporan anda berhasil di input dengan status Tiket Open")
+        st.success("Pelaporan anda berhasil di input dengan status Tiket Open")
         time.sleep(5)
         new_tiket = f"DV{random.randint(10000,99999)}"
         new_id = csv["id"].max() + 1 if not csv.empty else 1
@@ -40,9 +40,10 @@ if submit_button:
         )
         csv = pd.concat([csv, new_data], ignore_index=True)
         csv.to_csv("data.csv", index=False)
+        print(f'{new_id}')
         st.rerun()
 
-csv.columns = [col.upper() for col in csv.columns]
+# csv.columns = [col.upper() for col in csv.columns]
 
 st.write("### Data Ticketing")
 edited_df = st.data_editor(csv, hide_index=True)
@@ -50,5 +51,7 @@ edited_df = st.data_editor(csv, hide_index=True)
 save_button = st.button("Save Changes")
 
 if save_button:
-    edited_df.to_csv("data.csv", index=False)
-    st.rerun()
+      st.success("Perubahan pada table telah berhasil")
+      time.sleep(5)
+      edited_df.to_csv("data.csv", index=False)
+      st.rerun()
