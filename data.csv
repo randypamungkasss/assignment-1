@@ -1,0 +1,8 @@
+ID,TIKET,NO HP,NAMA,KOTA,KENDALA,STATUS
+1,DV12098,08239123431,Budi,Surabaya,Tidak bisa Telfon,Close
+2,DV67823,08521039923,Citra,Jakarta,Tidak bisa SMS,Close
+3,DV12987,08134523422,Faris,Sidoarjo,Nomor tidak bisa isi Pulsa,Close
+4,DV64531,08923472313,Ratna,Denpasar,Tidak bisa Internet,Close
+5,DV79677,0875632784,Randi,Surabaya,Sinyal Hilang,Close
+6,DV47150,08962389646,Randi,Surabaya,Hp saya Mati,Open
+7,DV48192,08962389646,Randi,Surabaya,Remote saya rusak,Open
