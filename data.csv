@@ -1,9 +1,4 @@
 id,tiket,no hp,nama,kota,kendala,status
 1,DV12098,8239123431,Budi,Surabaya,Tidak bisa Telfon,Close
 2,DV67823,8521039923,Citra,Jakarta,Tidak bisa SMS,Close
-3,DV12987,8134523422,Faris,Sidoarjo,Nomor tidak bisa isi Pulsa,Close
-4,DV64531,8923472313,Ratna,Denpasar,Tidak bisa Internet,Close
-5,DV79677,875632784,Randi,Surabaya,Sinyal Hilang,Close
-6,DV47150,8962389646,Randi,Surabaya,Hp saya Mati,Close
-7,DV48192,8962389646,Randi,Surabaya,Remote saya rusak,Open
-8,DV57384,08923786921,Randi,Surabaya,blablabla,Open
+
